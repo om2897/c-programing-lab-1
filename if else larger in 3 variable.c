@@ -2,44 +2,38 @@
 
 void main ()
 {
-    float a,b,c;
-    printf("enter two values\n");
+    int a,b,c,largest,smallest;
+    printf("Enter three values\n");
     printf("Enter no. 1 = ");
-    scanf("%f",&a);
+    scanf("%d",&a);
     printf("Enter no. 2 = ");
-    scanf("%f",&b);
+    scanf("%d",&b);
     printf("Enter no. 3 = ");
-    scanf("%f",c);
-    if (a>b&&a>c&&b>c)
+    scanf("%d",&c);
+    if(a>=b&&a>=c)
     {
-        printf("No. 1 has larger value\n");
-        printf("No. 2 has smaller value\n");
-
+        largest=a;
     }
-    else if(b>c&&b>a&&c>a)
+    else if(b>=a&&b>=c)
     {
-        printf("No. 2 has larger value\n");
-        printf("No. 3 has smaller value\n");
+        largest=b;
     }
-    else if(c>a&&c>b&&b>a)
+    else
     {
-        printf("No. 3 has larger value\n");
-        printf("No. 2 has smaller value\n");
+        largest=c;
     }
-     else if(c>a&&c>b&&a>b)
+     if(a<=b&&a<=c)
     {
-        printf("No. 3 has larger value\n");
-        printf("No. 1 has smaller value\n");
+        smallest=a;
     }
-    else if(b>c&&b>a&&a>c)
+    else if(b<=a&&b<=c)
     {
-        printf("No. 2 has larger value\n");
-        printf("No. 1 has smaller value\n");
+        smallest=b;
     }
-    else if(a>c&&a>b&&c>b)
+    else
     {
-        printf("No. 1 has larger value\n");
-        printf("No. 3 has smaller value\n");
+        smallest=c;
     }
-
+    printf("%d id the largest number\n",largest);
+    printf("%d id the smallest number\n",smallest);
 }
