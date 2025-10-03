@@ -4,7 +4,6 @@ void main()
     int number,digit,sum=0;
     printf("enter a number:");
     scanf("%d",&number);
-    printf("Digits of the number:");
     if(number==0)
     {
         printf("0\n");
@@ -19,4 +18,5 @@ void main()
         }
     }
     printf("sum of digits:%d\n",sum);
+
 }
